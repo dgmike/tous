@@ -1,0 +1,16 @@
+{
+  "name": "tous",
+  "version": "0.0.0",
+  "description": "With TOUS your company can manage terms of use documents and users already signed.",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "terms of use"
+  ],
+  "author": "Michael Granados <contato@dgmike.com.br>",
+  "license": "MIT"
+}
