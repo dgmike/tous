@@ -12,5 +12,11 @@
     "terms of use"
   ],
   "author": "Michael Granados <contato@dgmike.com.br>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/swagger": "^9.5.2",
+    "@fastify/swagger-ui": "^5.2.3",
+    "fastify": "^5.6.1",
+    "fastify-plugin": "^5.1.0"
+  }
 }

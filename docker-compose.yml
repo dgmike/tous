@@ -2,6 +2,7 @@ services:
   app:
     build: .
     ports:
-      - 3000
+      - ${PORT}:${PORT}
     environment:
-      - NODE_DEBUG=tous:*
+      NODE_DEBUG: tous:*
+      PORT: ${PORT}
