@@ -1,6 +1,6 @@
 import Fastify from 'fastify'
-import plugins from './plugins/index.js'
-import routes from './routes/index.js'
+import plugins from './plugins/index.ts'
+import routes from './routes/index.ts'
 
 const app = Fastify({
   logger: true,

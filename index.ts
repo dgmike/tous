@@ -1,5 +1,5 @@
 import util from 'node:util'
-import app from './src/index.js'
+import app from './src/index.ts'
 
 const PORT = parseInt(process.env.PORT)
 
