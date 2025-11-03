@@ -1,4 +1,4 @@
-import rootSchema from './root.schema.json' with { type: 'json' }
+import rootSchema from './root.schema.ts'
 
 export default {
   rootSchema
