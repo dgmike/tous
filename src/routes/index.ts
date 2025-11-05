@@ -1,4 +1,4 @@
-import { FastifyInstance } from 'fastify'
+import { type FastifyInstance } from 'fastify'
 import schemas from './schemas/index.ts'
 
 export default function routes(instance: FastifyInstance) {

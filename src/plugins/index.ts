@@ -1,7 +1,8 @@
 import fastifyPlugin from 'fastify-plugin'
 import swagger from '@fastify/swagger'
 import swaggerUI from '@fastify/swagger-ui'
-import { FastifyInstance } from 'fastify'
+import { type FastifyInstance } from 'fastify'
+import { jsonSchemaTransform, jsonSchemaTransformObject } from 'fastify-type-provider-zod'
 
 async function docs(instance: FastifyInstance) {
   await instance.register(
@@ -15,6 +16,8 @@ async function docs(instance: FastifyInstance) {
           version: '1.0.0',
         },
       },
+      transform: jsonSchemaTransform,
+      transformObject: jsonSchemaTransformObject,
     },
   )
 

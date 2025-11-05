@@ -1,4 +1,8 @@
-import { RouteShorthandOptions } from "fastify";
+import { z } from 'zod'
+
+const ROOT_RESPONSE = z.object({ ok: z.boolean() })
+
+z.globalRegistry.add(ROOT_RESPONSE, { id: 'RootResponse' })
 
 export default {
   schema: {
@@ -6,21 +10,7 @@ export default {
     description: 'hello world route',
     tags: ['root'],
     response: {
-      200: {
-        description: 'Success',
-        content: {
-          'application/json': {
-            schema: {
-              type: 'object',
-              properties: {
-                ok: {
-                  type: 'boolean'
-                }
-              }
-            }
-          }
-        }
-      }
+      200: ROOT_RESPONSE,
     }
   }
-} as RouteShorthandOptions
+}
