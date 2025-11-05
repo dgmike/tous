@@ -1,3 +1,5 @@
+import { RouteShorthandOptions } from "fastify";
+
 export default {
   schema: {
     summary: 'hello world',
@@ -21,4 +23,4 @@ export default {
       }
     }
   }
-}
+} as RouteShorthandOptions

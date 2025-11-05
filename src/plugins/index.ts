@@ -1,8 +1,9 @@
 import fastifyPlugin from 'fastify-plugin'
 import swagger from '@fastify/swagger'
 import swaggerUI from '@fastify/swagger-ui'
+import { FastifyInstance } from 'fastify'
 
-async function docs(instance) {
+async function docs(instance: FastifyInstance) {
   await instance.register(
     swagger,
     {

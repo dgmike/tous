@@ -1,6 +1,7 @@
+import { FastifyInstance } from 'fastify'
 import schemas from './schemas/index.ts'
 
-export default function routes(instance) {
+export default function routes(instance: FastifyInstance) {
   instance.get(
     '/',
     schemas.rootSchema,

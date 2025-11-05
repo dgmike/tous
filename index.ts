@@ -1,10 +1,6 @@
-import util from 'node:util'
 import app from './src/index.ts'
 
-const PORT = parseInt(process.env.PORT)
-
-const log = util.debuglog('tous:main')
-log('Hello world')
+const PORT = parseInt(process.env.PORT || '3000')
 
 try {
   await app.listen({ port: PORT })
