@@ -6,11 +6,23 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "node --experimental-transform-types --watch --env-file=.env index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "terms of use"
   ],
   "author": "Michael Granados <contato@dgmike.com.br>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/swagger": "^9.5.2",
+    "@fastify/swagger-ui": "^5.2.3",
+    "fastify": "^5.6.1",
+    "fastify-plugin": "^5.1.0",
+    "fastify-type-provider-zod": "^5.1.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0"
+  }
 }
